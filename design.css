@@ -1,0 +1,27 @@
+body {
+  background-image: url("picture/top.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+.top h1{
+  padding: 225px;
+  font-size:100px;
+}
+.why h1{
+  font-size: 50px;
+  padding-top: 70px;
+}
+.why h2{
+  padding:20px
+}
+.why {
+  font-size: 20px;
+}
+.about_me h1{
+  font-size: 50px;
+  padding-top: 70px;
+}
+.about_me {
+  font-size: 20px;
+}
