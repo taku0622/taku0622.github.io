@@ -1,5 +1,11 @@
+.outer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 body {
-  background-image: url("picture/top.jpg");
+  /* background-image: url("picture/top.jpg"); */
+  background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -25,3 +31,4 @@ body {
 .about_me {
   font-size: 20px;
 }
+
