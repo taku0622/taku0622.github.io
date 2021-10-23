@@ -4,5 +4,10 @@ p {
 }
 h1 {
   font-size: 24px;
-  margin: 50px;
+  margin: 0px;
+}
+.content {
+  background-color: #fcc;
+  width: 600px;
+  margin: 0 auto;
 }
