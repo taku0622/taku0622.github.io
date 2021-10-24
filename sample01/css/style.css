@@ -21,3 +21,13 @@ input { /* ユーザが入力しやすいCSS */
   width: 100%; /* 幅を100%にする */
   padding: 8px; /* 内側の余白を増やす */
 }
+
+button {
+  width: 100%; /* 幅をいっぱいにする */
+  background-color: #2096f3; /* 背景色 */
+  color: #fff; /* 文字の色 */
+  padding: 15px; /* 内側の余白 */
+  border: 0; /* 枠線を無くす */
+  border-radius: 3px; /* 角を丸くする */
+  box-shadow: 0 0 8px rgba(0,0,0, .4); /* ボックスを浮いた状態にする */
+}
