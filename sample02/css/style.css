@@ -72,3 +72,9 @@ header h1 {
   list-style: decimal inside;
 }
 
+.songs li {
+  border-bottom: 1px solid #ccc;
+  width: 50%;
+  float: left;
+  padding: 5px 10px;
+}
