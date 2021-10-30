@@ -25,6 +25,10 @@ header h1 {
   text-align: center;
 }
 
+.description {
+  clear: left;
+}
+
 .description img{
   float: left;
   margin: 0 10px 10px 0;
@@ -37,5 +41,9 @@ header h1 {
 }
 
 .information .type {
+  display: inline;
   background-color: #E35A4D;
+  padding: 3px 5px;
+  font-size: 80%;
+  color: #fff;
 }
