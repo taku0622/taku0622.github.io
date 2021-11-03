@@ -34,6 +34,14 @@ header h1 {
 .description img{
   float: left;
   margin: 0 10px 10px 0;
+  transition-property: opacity; /* 対象となるプロパティ */
+  transition-duration: 1s; /* アニメーションを行う時間 */
+  transition-timing-function: ease; /* アニメーションのエフェクト */
+  transition-delay: 0s; /* アニメーションをする待ち時間 */
+}
+
+.description img:hover { /* カーソルを合わせたとき */
+  opacity: .5; 
 }
 
 .information h1 {
