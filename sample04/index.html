@@ -24,8 +24,15 @@
       document.write('<p class="date">20xx/01/23</p>');　//JavaScriptエンジンが解釈する
     </script>
     <script>
-      document.write(10 + 6 / 3 + '<p></p>'); // 「12」と表記される
-      document.write('10+3の結果は、' + (10 + 3) + 'です。'); // 「10+3の結果は、13です。」と表記される
+      var answer = 10 + 3;
+      document.write('10+3の結果は、' + answer + 'です。');
+      document.write('<br>' + answer); // ①
+
+      answer = 10 - 3; // ②
+      document.write('<br>10-3=' + answer);
+
+      answer += 10; // ③
+      document.write('<br>' + answer);
     </script>
   </div>
 </body>
