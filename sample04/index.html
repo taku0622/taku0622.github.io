@@ -22,9 +22,8 @@
     <p class="date">20xx/01/23</p><!-- htmlのレンダリングエンジンが解釈する -->
     <script>
       var today = new Date();
-      document.write('<p>今日は、' + today.getDate() + '日です</P>');
-
-      document.write(Math.abs(-10));
+      var todayHtml = today.getFullYear() + '/' + (today.getMonth() + 1) + '/' + today.getDate();
+      document.write('<p class="date">' + todayHtml + '</p>');
     </script>
   </div>
 </body>
