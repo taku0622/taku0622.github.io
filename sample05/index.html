@@ -24,26 +24,20 @@
   </div>
 
   <script>
+    // ゼロを追加する
+    var addZero = function (value) {
+      if (value < 10) {
+        value = '0' + value;
+      }
+      return value;
+    }
     var now = new Date();
     var seconds = now.getSeconds(); //秒数取得
+    seconds = addZero(seconds);
 
-    // 0~9秒の間だけ二桁の処理(seconds < 10)
-    if (seconds < 10) {
-      seconds = '0' + seconds;
-    }
+    var minutes = addZero(now.getMinutes()); //分取得
 
-    var minutes = now.getMinutes(); //分取得
-
-    // 0~9分の間だけ二桁の処理(minutes < 10)
-    if (minutes < 10) {
-      minutes = '0' + minutes;
-    }
-
-    var hours = now.getHours(); //時取得
-    // 0~9分の間だけ二桁の処理(minutes < 10)
-    if (hours < 10) {
-      hours = '0' + hours;
-    }
+    var hours = addZero(now.getHours()); //時取得    }
 
     document.getElementById('timer').innerHTML = hours + ':' + minutes + ':' + seconds;
   </script>
