@@ -32,7 +32,20 @@
       seconds = '0' + seconds;
     }
 
-    document.getElementById('timer').innerHTML = seconds;
+    var minutes = now.getMinutes(); //分取得
+
+    // 0~9分の間だけ二桁の処理(minutes < 10)
+    if (minutes < 10) {
+      minutes = '0' + minutes;
+    }
+
+    var hours = now.getHours(); //時取得
+    // 0~9分の間だけ二桁の処理(minutes < 10)
+    if (hours < 10) {
+      hours = '0' + hours;
+    }
+
+    document.getElementById('timer').innerHTML = hours + ':' + minutes + ':' + seconds;
   </script>
 </body>
 </html>
