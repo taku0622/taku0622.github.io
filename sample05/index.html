@@ -24,22 +24,18 @@
   </div>
 
   <script>
-    // ゼロを追加する
-    var addZero = function (value) {
-      if (value < 10) {
-        value = '0' + value;
-      }
-      return value;
-    }
+    var start;
+    document.getElementById('start_stop').addEventListener('click', function () {
+      start = new Date();
 
-    document.getElementById('start_stop').addEventListener('click',
-      function () {
-        var now = new Date();
-        var seconds = addZero(now.getSeconds()); //秒数取得
-        var minutes = addZero(now.getMinutes()); //分取得
-        var hours = addZero(now.getHours()); //時取得
-        document.getElementById('timer').innerHTML = hours + ':' + minutes + ':' + seconds;
-      });
+      setInterval(goTimer, 10);
+    });
+    var goTimer = function () {
+      var now = new Date();
+      var milli = now.getTime() - start.getTime();
+      var seconds = Math.floor(milli / 1000);
+      document.getElementById('timer').innerHTML = seconds;
+    }
   </script>
 </body>
 </html>
