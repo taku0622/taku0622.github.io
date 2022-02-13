@@ -31,15 +31,15 @@
       }
       return value;
     }
-    var now = new Date();
-    var seconds = now.getSeconds(); //秒数取得
-    seconds = addZero(seconds);
 
-    var minutes = addZero(now.getMinutes()); //分取得
-
-    var hours = addZero(now.getHours()); //時取得    }
-
-    document.getElementById('timer').innerHTML = hours + ':' + minutes + ':' + seconds;
+    document.getElementById('start_stop').addEventListener('click',
+      function () {
+        var now = new Date();
+        var seconds = addZero(now.getSeconds()); //秒数取得
+        var minutes = addZero(now.getMinutes()); //分取得
+        var hours = addZero(now.getHours()); //時取得
+        document.getElementById('timer').innerHTML = hours + ':' + minutes + ':' + seconds;
+      });
   </script>
 </body>
 </html>
