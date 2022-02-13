@@ -24,7 +24,15 @@
   </div>
 
   <script>
-    document.getElementById('timer').innerHTML = '00:00:01';
+    var now = new Date();
+    var seconds = now.getSeconds(); //秒数取得
+
+    // 0~9秒の間だけ二桁の処理(seconds < 10)
+    if (seconds < 10) {
+      seconds = '0' + seconds;
+    }
+
+    document.getElementById('timer').innerHTML = seconds;
   </script>
 </body>
 </html>
