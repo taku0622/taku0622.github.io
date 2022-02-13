@@ -25,10 +25,24 @@
 
   <script>
     var start;
+    var timer_id;
     document.getElementById('start_stop').addEventListener('click', function () {
-      start = new Date();
+      if (this.innerHTML === 'START') {
+        start = new Date();
+        timer_id = setInterval(goTimer, 10);
+        // stopボタンの作成
+        this.innerHTML = 'STOP'; // 「document.getElementById('start_stop').innerHTML = 'STOP';」と同じ
+        this.classList.remove('btn-primary');
+        this.classList.add('btn-danger');
+      } else {
+        clearInterval(timer_id);
+        // startボタンの作成
+        this.innerHTML = 'START';
+        this.classList.remove('btn-danger');
+        this.classList.add('btn-primary');
+      }
 
-      setInterval(goTimer, 10);
+
     });
 
     var addZero = function (value) {
