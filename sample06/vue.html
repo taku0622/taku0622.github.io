@@ -18,9 +18,14 @@
     <div id="img_unit">
 
     </div>
+    <div id="vue_unit">
+      {{ greeting }}<br>
+      {{ message }}
+    </div>
   </div>
 
   <script src="js/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   <script>
     $.getJSON('https://h2o-space.com/htmlbook/images.php', function (data) {
       for (var i = 0; i < data.length; i++) {
@@ -30,6 +35,14 @@
           .appendTo('#img_unit');
       }
     });
+
+    var app = new Vue({
+      el: '#vue_unit',
+      data: {
+        message: 'Vue.jsで書き換えました',
+        greeting: 'こんにちは'
+      }
+    })
   </script>
 </body>
 </html>
