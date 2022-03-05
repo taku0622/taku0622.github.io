@@ -16,7 +16,12 @@
 
   <div class="container">
     <div id="img_unit">
-
+      <div class="photo">
+        <img :src="Photo.path" v-for="Photo in Photos">
+        <div class="inner">
+          <p>{{ Photo.caption }}<span>{{ Photo.name }}</span></p>
+        </div>
+      </div>
     </div>
     <div id="vue_unit">
       {{ greeting }}<br>
