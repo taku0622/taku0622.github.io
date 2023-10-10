@@ -1,0 +1,15 @@
+{
+    "applinks": {
+        "App": [],
+        "details": [
+            {
+                "appID": "TLPFYK6FNJ.com.cookpad",
+                "paths": [ "*" ]
+            },
+            {
+                "appID": "2CCV6DZ29E.com.kouzoh.ios.mercari",
+                "paths": [ "*" ]
+            }
+        ]
+    }
+}
