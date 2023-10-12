@@ -855,7 +855,11 @@
                   "NOT /nflstoffers/*",
                   "*"
               ]
-          }
+          },
+          {
+            "appID": "jp.co.secom.design.commity",
+            "paths": ["*"]
+        }
       ]
   }
 }
